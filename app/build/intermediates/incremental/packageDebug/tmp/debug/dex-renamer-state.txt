@@ -1,0 +1,4 @@
+#Mon Nov 25 22:52:01 EST 2019
+base.0=C\:\\Users\\M1042\\AndroidStudioProjects\\1\\Insight2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
