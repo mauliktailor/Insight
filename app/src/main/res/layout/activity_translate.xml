@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TranslateActivity"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="236dp"
+        android:text="Highlighter"
+        android:textSize="30sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/colorAccent"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="213dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        style="@style/WhiteText"/>
+
+    <TextView
+        android:id="@+id/translatedTextView"
+        android:layout_width="108dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/speakButton"
+        android:layout_width="83dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="236dp"
+        android:onClick="speakButtonClicked"
+        android:text="Speak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/speakButton1"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="speakButton1Clicked"
+        android:text="Speak"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toEndOf="@+id/translatedTextView"
+        app:layout_constraintTop_toTopOf="@+id/translatedTextView" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="154dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorWhite"
+        android:onClick="Translate"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:srcCompat="@drawable/translate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
